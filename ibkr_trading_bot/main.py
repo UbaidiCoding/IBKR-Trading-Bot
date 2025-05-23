@@ -5,6 +5,11 @@ from interfaces.telegram.bot import TelegramBot
 from interfaces.webhooks.server import WebhookServer
 from services.config import get_settings
 from services.logger import setup_logging
+from ibkr_trading_bot.interfaces.telegram.bot import TelegramBot
+
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent))
 
 async def main():
     setup_logging()
@@ -32,3 +37,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+    
