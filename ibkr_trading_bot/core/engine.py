@@ -23,3 +23,9 @@ class TradingEngine:
         
         # Implementation with proper error handling
         # ... (see full implementation below)
+        # Instead of:
+# from core.exceptions import TradingError
+
+# Use:
+class TradingError(Exception):
+    pass
