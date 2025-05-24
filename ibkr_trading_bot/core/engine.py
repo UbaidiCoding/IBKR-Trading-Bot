@@ -3,6 +3,7 @@ from brokers.ibkr.client import IBKRClient
 from core.models import TradeConfig, OrderResult
 from core.exceptions import TradingError
 import asyncio
+import TradingEngine
 
 class TradingEngine:
     def __init__(self):

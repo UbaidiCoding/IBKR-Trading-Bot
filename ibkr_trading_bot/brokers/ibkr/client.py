@@ -3,6 +3,7 @@ from ..base import BaseBroker
 from core.models import OrderResult, AccountBalance
 from core.exceptions import BrokerError
 import logging
+import IBKRClient
 
 class IBKRClient(BaseBroker):
     """Interactive Brokers API client implementation"""
